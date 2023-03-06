@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://toppng.com/uploads/preview/starry-sky-stars-night-shine-dark-11570341902w6fc3m2vgg.jpg);
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+.house{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+.dog{
+    position: absolute;
+    width: 25%;
+    right: -25%;
+    bottom: -8%;
+    animation: dog 15s linear infinite;
+    z-index: 10;
+    overflow: hidden;
+}
+@keyframes dog {
+    from{
+        right: -20%;
+        bottom: -10;
+    }
+    to{
+        right: 100%;
+        bottom: -5%;
+    }
+    
+}
+.cloud{
+    width: 37%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: -65%;
+    animation: cloud 50s linear infinite;
+    opacity: .3;
+}
+@keyframes cloud {
+    from{
+        right: -65%;
+        top: 0;
+    }
+    to{
+        right: 100%;
+        top: 0;
+    }
+}
+.cloud2{
+    width: 37%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: -38%;
+    animation: cloud2 50s linear infinite;
+    opacity: .3;
+}
+@keyframes cloud2 {
+    from{
+        right: -38%;
+        top: 0;
+    }
+    to{
+        right: 100%;
+        top: 0;
+    }
+}
+.star{
+    position: absolute;
+    width: 8%;
+    right: 3%;
+    top: -35%;
+    animation: star 4s linear 3s;
+}
+@keyframes star {
+    from{
+        right: 3%;
+        top: -35%;
+    }
+    to{
+        top: 90%;
+        right: 100%;
+    }
+    
+}
+.plane{
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    width: 4%;
+    animation: plane 15s linear infinite;
+}
+@keyframes plane {
+    from{
+        right: 0;
+        bottom: 50%;
+    }
+    to{
+        right: 100%;
+        bottom: 100%;
+    }
+    
+}
+.girl{
+    position: absolute;
+    width: 10%;
+    left: 0;
+    bottom: 5%;
+    z-index: 5;
+}
+.guy{
+    position: absolute;
+    width: 9%;
+    left: 48%;
+    bottom: 8%;
+    z-index: 6;
+}
+.barbeque{
+    width: 7%;
+    position: absolute;
+    bottom: 10%;
+    right: 60%;
+    z-index: 7;
+}
+.ball{
+    width: 2.5%;
+    position: absolute;
+    z-index: 8;
+    right: -5%;
+    bottom: 50;
+    animation: ball 12s linear infinite;
+}
+@keyframes ball {
+    from{
+        right: -5%;
+        bottom: 1%;
+    }
+    to{
+        bottom: 1%;
+        right: 100%;
+    }
+    
+}
+.lightning{
+    width: 15%;
+}
